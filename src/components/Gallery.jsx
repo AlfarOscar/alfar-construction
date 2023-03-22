@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import {BsChevronCompactLeft,BsChevronCompactRight} from 'react-icons/bs'
 import {RxDotFilled} from 'react-icons/rx'
-
+import {Link} from 'react-scroll'
 function Gallery()  {
 
 const slides = [
@@ -12,7 +12,7 @@ const slides = [
 { url: 'https://theoscarino.files.wordpress.com/2023/03/img2.jpg?w=1024'
 
 },
-{url: 'https://theoscarino.files.wordpress.com/2023/03/img3.jpg?w=768'
+ {url: 'https://theoscarino.files.wordpress.com/2023/03/img3.jpg?w=768'
 },
 { url: 'https://theoscarino.files.wordpress.com/2023/03/img4.jpg?w=1024'
 
@@ -27,7 +27,10 @@ const slides = [
 },
 { url: 'https://theoscarino.files.wordpress.com/2023/03/img8.jpg?w=1024'
 
-}
+},
+{ url: 'https://theoscarino.files.wordpress.com/2023/03/img9.jpg'},
+{ url: 'https://theoscarino.files.wordpress.com/2023/03/img10.jpg?w=768'},
+
 ];
 const [currentIndex, setCurrentIndex] = useState(0)
 const prevSlide = () => {
@@ -46,7 +49,7 @@ const goToSlide=(slideIndex) =>{
 
 
   return (
-    <div name='Gallery' className='w-screen h-screen bg-[#272727]'>
+    <div name='Gallery' className='w-full h-screen bg-[#272727]'>
     <div className='max-w-[1024px] h-[768px] w-full m-auto py-16 px-4 relative group group-hover bg-[#272727] margin-0 padding:0'>
       <div style={{backgroundImage:`url(${slides[currentIndex].url})` }} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'></div>
     {/*Left Arrow*/}
@@ -65,6 +68,12 @@ const goToSlide=(slideIndex) =>{
         </div>
       ))}
 
+    </div>
+    <div className='text-[#8c8c8c] mx-auto flex flex-col justify-center items-center bg-[#272727]'>
+        <h1>Have Any Questions?</h1>
+        <Link to='contact' smooth={true} duration={500}>
+        <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#fca03d] hover:border-[#fca03d]'>Contact Me</button>
+        </Link>
     </div>
 
           </div>
