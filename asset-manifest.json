@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/alfar-construction/static/css/main.3a21fed5.css",
+    "main.js": "/alfar-construction/static/js/main.6aa1837d.js",
+    "static/media/logo2.png": "/alfar-construction/static/media/logo2.dd9e2c0b6cfd38ac8ade.png",
+    "index.html": "/alfar-construction/index.html",
+    "main.3a21fed5.css.map": "/alfar-construction/static/css/main.3a21fed5.css.map",
+    "main.6aa1837d.js.map": "/alfar-construction/static/js/main.6aa1837d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a21fed5.css",
+    "static/js/main.6aa1837d.js"
+  ]
+}
